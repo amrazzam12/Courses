@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/form.css">
+    </head>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="signup.php" method="POST">
+			<h1>Create Account</h1>
+			<input type="text" name="username" placeholder="username">
+			<input type="email" name="email" placeholder="Email" />
+			<input type="password" name="pass" placeholder="password"> 
+			<input type="submit" name="subreg" value="Sign Up">
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="login.php" method="POST">
+			<h1>Sign in</h1>
+			
+			<input type="text" name="user" placeholder="Username" />
+			<input type="password" name="pass" placeholder="Password" />
+
+			<input type="submit" name="subin" value="Sign in">
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+                
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="assets/js/forms.js"></script>
+</html>
